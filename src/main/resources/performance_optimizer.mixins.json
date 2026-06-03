@@ -4,6 +4,17 @@
   "package": "com.giorg.performance_optimizer.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "MixinLevelPoissonDiscProvider",
+    "MixinFoodItems",
+    "MixinModernGlassDoors",
+    "MixinWaveHelpers",
+    "voxy.MixinSoftwareRasterizer",
+    "voxy.MixinSoftwareModelTextureBakery",
+    "shadered.MixinShaderedMod",
+    "worldedit.MixinBlockState", "MixinFireBlock",
+    "worldedit.MixinBlockStateIdAccess",
+    "MixinGameRendererNullFix",
+    "MixinForgeGuiNullFix"
   ],
   "client": [
   ],

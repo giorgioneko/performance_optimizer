@@ -54,6 +54,16 @@ repositories {
 dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
+
+    compileOnly files('C:/Users/giorg/AppData/Roaming/ModrinthApp/profiles/Personal/mods/DynamicTrees-1.20.1-1.4.10.jar')
+    compileOnly files('C:/Users/giorg/AppData/Roaming/ModrinthApp/profiles/Personal/mods/foodexpansion-1.10.0.jar')
+    compileOnly files('C:/Users/giorg/AppData/Roaming/ModrinthApp/profiles/Personal/mods/modern_glass_doors-Forge-1.0.0-1.20.1.jar')
+    compileOnly files('C:/Users/giorg/AppData/Roaming/ModrinthApp/profiles/Personal/mods/Waves-1.20.1-1.6a.jar')
+    compileOnly files('C:/Users/giorg/AppData/Roaming/ModrinthApp/profiles/Personal/mods/voxy-0.2.14-alpha.jar')
+    compileOnly files('C:/Users/giorg/AppData/Roaming/ModrinthApp/profiles/Personal/mods/shadered-1.1.3.jar')
+    compileOnly files('C:/Users/giorg/AppData/Roaming/ModrinthApp/profiles/Personal/mods/worldedit-mod-7.2.15.jar')
+    
+    compileOnly fileTree(dir: 'libs', include: '*.jar')
 }
 
 tasks.named('processResources', ProcessResources).configure {
