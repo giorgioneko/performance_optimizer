@@ -51,6 +51,11 @@ repositories {
     mavenCentral()
 }
 
+mixin {
+    add sourceSets.main, "performance_optimizer.refmap.json"
+    config 'performance_optimizer.mixins.json'
+}
+
 dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
